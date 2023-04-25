@@ -19,10 +19,6 @@ public class Cancelled implements ShoppingState{
     @Override
     public void removeProduct(String product, int numberOfUnits, Order order){throw new IllegalArgumentException();}
     @Override
-    public void goPreviousState(Order order){throw new IllegalArgumentException();}
-    @Override
-    public void goNextState(Order order){throw new IllegalArgumentException();}
-    @Override
     public void screenInfo(Order order){
         System.out.println("Order number: " + order.getOrderNumber());
         System.out.println("Phase: Cancelled order" );

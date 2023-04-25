@@ -41,8 +41,12 @@ public interface ShoppingState {
         throw new IllegalArgumentException();
     }
 
-    void goPreviousState(Order order);
-    void goNextState(Order order);
+    default void goPreviousState(Order order){
+        throw new IllegalArgumentException();
+    }
+    default void goNextState(Order order){
+        throw new IllegalArgumentException();
+    }
 
     void screenInfo(Order order);
 

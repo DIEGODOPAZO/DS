@@ -47,10 +47,6 @@ public class ShoppingCart implements ShoppingState{
         throw new IllegalArgumentException();
     }
 
-    @Override
-    public void goPreviousState(Order order){
-        throw new IllegalArgumentException();
-    }
 
     @Override
     public void goNextState(Order order){

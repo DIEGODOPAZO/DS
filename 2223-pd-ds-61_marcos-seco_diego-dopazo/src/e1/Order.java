@@ -9,6 +9,8 @@ import java.util.Date;
 import java.util.List;
 
 public class Order {
+
+
     private ShoppingState orderState = ShoppingCart.getState();
     private final int orderNumber;
     private boolean isPaid = false;
@@ -36,20 +38,6 @@ public class Order {
     public List<String> getLog(){
         return log;
     }
-
-    public boolean isPaid(){
-        return isPaid;
-    }
-
-    public void setIsPaid(boolean isPaid){
-        this.isPaid = isPaid;
-    }
-    public void setPaymentDate(Date paymentDate){
-        this.paymentDate = paymentDate;
-    }
-    public Date getPaymentDate(){
-        return paymentDate;
-    }
     public List<Product> getCartItems(){
         return cartItems;
     }
@@ -59,12 +47,28 @@ public class Order {
     public Client getClient(){
         return client;
     }
-
+    public Date getPaymentDate(){
+        return paymentDate;
+    }
     public int getOrderNumber(){
         return orderNumber;
     }
+
+
+
+
+    public void setIsPaid(boolean isPaid){
+        this.isPaid = isPaid;
+    }
+    public void setPaymentDate(Date paymentDate){
+        this.paymentDate = paymentDate;
+    }
+
     public void setPayment(float payment){
         this.payment = payment;
+    }
+    public boolean isPaid(){
+        return isPaid;
     }
 
     public void printLog(){
@@ -97,6 +101,9 @@ public class Order {
     }
     public void setShoppingState(ShoppingState state){
         orderState = state;
+    }
+    public ShoppingState getOrderState() {
+        return orderState;
     }
 
 

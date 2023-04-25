@@ -3,6 +3,7 @@ package e1;
 import e1.ShoppingSteps.Payment;
 import e1.ShoppingSteps.ShoppingCart;
 import e1.ShoppingSteps.ShoppingState;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
